@@ -1,5 +1,11 @@
 # LEARNING REDUX
 
+<section data-markdown>
+  
+  ![Screen 01](https://github.com/NathanaelCruz/images_resource_projects/blob/master/Images/calculator_Splitter_01.png)
+  
+</section>
+
 ## Objetivo
 O objetivo deste projeto era entender e aplicar os conhecimentos relativos ao Redux, algo que não possui conhecimento. 
 
