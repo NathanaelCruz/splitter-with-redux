@@ -1,0 +1,86 @@
+.fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fields__group {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.fields__label {
+    width: 50%;
+    margin-bottom: .3rem;
+    font: 700 1.8rem 'Space Mono', monospace;
+}
+
+.fields__textInputContent {
+    width: 100%;
+    position: relative;
+}
+
+.fields__textInput {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-light-grayish-cyan);
+    color: var(--color-very-dark-cyan);
+    margin-top: 1rem;
+}
+
+.fields__icon {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 1rem;
+}
+
+.list__tipsPercents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.list__tipsPercents__item {
+    width: 48%;
+    margin-bottom: 1rem;
+}
+
+.list__tipsPercents__button {
+    width: 100%;
+    border: none;
+}
+
+.fields__textIput__custom {
+    padding: .5rem;
+}
+
+.fields__textIput__custom,
+.list__tipsPercents__button {
+    text-align: center;
+}
+
+.fields__error {
+    width: 48%;
+    color: rgb(141, 17, 17);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+@media (min-width: 767px) {
+    .fields {
+        max-width: 50%;
+    }
+    .list__tipsPercents__item {
+        max-width: 30%;
+    }
+}

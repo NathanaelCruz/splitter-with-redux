@@ -1,0 +1,103 @@
+:root {
+    --color-primary: hsl(172, 67%, 45%);
+    --color-very-dark-cyan: hsl(183, 100%, 15%);
+    --color-dark-grayish-cyan: hsl(186, 14%, 43%);
+    --color-dark-grayish-cyan-02: hsl(184, 14%, 56%);
+    --color-light-grayish-cyan: hsl(185, 41%, 84%);
+    --color-light-grayish-cyan-02: hsl(189, 41%, 97%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+html,
+body,
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-input-placeholder {
+    color: var(--color-dark-grayish-cyan-02);
+}
+
+* {
+    font-size: 62.5%;
+    transition: .3s ease-in-out;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    background-color: var(--color-light-grayish-cyan);
+    color: var(--color-dark-grayish-cyan);
+}
+
+button,
+input,
+textarea {
+    font: 700 2.4rem 'Space Mono';
+    border-radius: .5rem;
+}
+
+button {
+    border-radius: .5rem;
+    color: var(--color-white);
+    background-color: var(--color-very-dark-cyan);
+    text-align: right;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--color-very-dark-cyan);
+    background-color: var(--color-light-grayish-cyan);
+}
+
+button:active,
+button:focus {
+    background-color: var(--color-primary);
+}
+
+button.is__selected {
+    background-color: var(--color-primary);
+}
+
+p {
+    font: 400 1.2rem 'Space Mono';
+}
+
+h1 {
+    font: 700 2rem 'Space Mono';
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+input {
+    border: none;
+    text-align: right;
+}
+
+input:active,
+input:focus {
+    outline: none;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-light-grayish-cyan);
+}
+
+input.is__invalid {
+    border: 2px solid rgb(141, 17, 17);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
